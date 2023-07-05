@@ -1,5 +1,5 @@
 // CICLO FOR CON CONDIZIONI CONSOLE
-for (let i = 1; i < 101; i++) {
+for (let i = 1; i <= 101; i++) {
     if (i % 15 == 0) console.log("fizzbuzz");
     else if (i % 3 == 0) console.log("fizz");
     else if (i % 5 == 0) console.log("buzz");
@@ -8,7 +8,7 @@ for (let i = 1; i < 101; i++) {
 
 // DICHIARAZIONE VARIABILI
 const chessContainer = document.querySelector(".chess-container");
-const totalCells = 10*10;
+const totalCells = 10*25;
 
 // CICLO FOR PER SCACCHIERA
 for (let i = 1; i < totalCells; i++){
@@ -21,6 +21,8 @@ for (let i = 1; i < totalCells; i++){
     singleCell.classList.add("d-flex", "justify-content-center", "align-items-center", "bg-primary");
     singleCell.innerHTML = i.toString();
 
+    chessContainer.append(singleCell);
+
     // CONDIZIONI
     if (i % 15 == 0) {
         singleCell.classList.add("bg-danger")
@@ -32,6 +34,7 @@ for (let i = 1; i < totalCells; i++){
         singleCell.classList.add("bg-success")
         singleCell.innerHTML = ("buzz")
     }    
-    chessContainer.append(singleCell);
+    
+    
 
 }
