@@ -21,8 +21,6 @@ for (let i = 1; i < totalCells; i++){
     singleCell.classList.add("d-flex", "justify-content-center", "align-items-center", "bg-primary");
     singleCell.innerHTML = i.toString();
 
-    chessContainer.append(singleCell);
-
     // CONDIZIONI
     if (i % 15 == 0) {
         singleCell.classList.add("bg-danger")
@@ -35,6 +33,6 @@ for (let i = 1; i < totalCells; i++){
         singleCell.innerHTML = ("buzz")
     }    
     
-    
+    chessContainer.append(singleCell);
 
 }
