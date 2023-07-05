@@ -3,10 +3,10 @@
     display: flex;
     flex-wrap: wrap;
     align-items: start;
+    justify-content: center;
 }
 
 .chess-square {
-    border: 1px solid red;
     aspect-ratio: 1/1;
     width: calc(100% / 7);
 }

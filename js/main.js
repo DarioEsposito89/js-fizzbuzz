@@ -8,7 +8,7 @@ for (let i = 1; i <= 101; i++) {
 
 // DICHIARAZIONE VARIABILI
 const chessContainer = document.querySelector(".chess-container");
-const totalCells = 10*25;
+const totalCells = 10*10;
 
 // CICLO FOR PER SCACCHIERA
 for (let i = 1; i < totalCells; i++){
